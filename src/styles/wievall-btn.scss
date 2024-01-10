@@ -1,0 +1,25 @@
+.viewall {
+  @include flex-row;
+  justify-content: end;
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    min-height: 38px;
+    padding-inline: 16px;
+    border: 1px solid $text-orange;
+    border-radius: 3px;
+    background-color: inherit;
+    transition: background 0.3s ease;
+
+    &:focus-visible {
+      outline: 2px solid $text-orange;
+    }
+
+    &:hover {
+      background: rgba(252, 67, 8, 0.3);
+    }
+  }
+}

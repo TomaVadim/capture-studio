@@ -1,13 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Capture Studio</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="page-header__container container">
+          <div class="header__navigation navigation">
+            <div class="navigation__logo">
+              <img src="./src/images/header/logo.png" alt="logo" />
+              <span class="navigation__title">Capture Studio</span>
+            </div>
+
+            <div class="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </div>
+
+            <nav class="navigation__nav">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#"> Projects</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Portraits</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Fashion</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Fine Art</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <section class="header_main main-header">
+            <div class="main-header__text">
+              <h1 class="main-header__title">We Capture the World</h1>
+              <p class="main-header__description">
+                At our studio, we don't just take pictures - we capture the
+                world. Our passion for photography goes beyond just snapping a
+                photo - we strive to create images that tell a story, evoke
+                emotions, and capture the essence of the world around us.
+              </p>
+              <button class="main-header__button">
+                <img
+                  src="./src/images/header/header-button-icon.png"
+                  alt="button-icon"
+                />
+              </button>
+            </div>
+            <div class="main-header__image">
+              <img src="./src/images/header/main.png" alt="main-image" />
+            </div>
+          </section>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__ourwork ourwork">
+          <div class="ourwork__container container">
+            <div class="ourwork__body">
+              <h2 class="ourwork__title">Our work</h2>
+              <div class="ourwork__cards cards">
+                <div class="cards__card">
+                  <div class="cards__image">
+                    <img
+                      src="./src/images/ourwork/Aisha-Patel.png"
+                      alt="Aisha Patel"
+                    />
+                  </div>
+                  <span class="cards__date">2018</span>
+                  <a href="#" class="cards__link"> Aisha Patel</a>
+                </div>
+
+                <div class="cards__card">
+                  <div class="cards__image">
+                    <img
+                      src="./src/images/ourwork/Isabella-Costa.png"
+                      alt="Isabella Costa"
+                    />
+                  </div>
+                  <span class="cards__date">2021</span>
+                  <a href="#" class="cards__link">Isabella Costa</a>
+                </div>
+
+                <div class="cards__card">
+                  <div class="cards__image">
+                    <img
+                      src="./src/images/ourwork/Fatima-Hassan.png"
+                      alt="Fatima Hassan"
+                    />
+                  </div>
+                  <span class="cards__date">2022</span>
+                  <a href="#" class="cards__link">Fatima Hassan</a>
+                </div>
+              </div>
+              <div class="ourwork__viewall viewall">
+                <button class="viewall__button">View all work</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__victorian victorian">
+          <div class="victorian__container container">
+            <div class="victorian__body">
+              <div class="victorian__articles articles">
+                <div class="articles__card card-articles">
+                  <div class="card-articles__description description">
+                    <h5 class="description__subtitle">March 2022</h5>
+                    <h3 class="description__title">Gabriela Silva</h3>
+                    <p class="description__info">
+                      Cras semper auctor neque vitae tempus. Neque volutpat ac
+                      tincidunt vitae. Eros donec ac odio tempor orci dapibus
+                      ultrices. Eget mauris pharetra et ultrices neque ornare.
+                      Metus aliquam eleifend mi in nulla posuere sollicitudin
+                      aliquam. Nunc id cursus metus aliquam eleifend mi.
+                    </p>
+                    <div class="description__viewall viewall">
+                      <button class="viewall__button">View case study</button>
+                    </div>
+                  </div>
+                  <div class="card-articles__image">
+                    <img
+                      src="./src//images/victorian/Gabriela-Silva.png"
+                      alt="Gabriela Silva"
+                    />
+                  </div>
+                </div>
+
+                <div class="articles__card card-articles">
+                  <div
+                    class="card-articles__description description reverse-description"
+                  >
+                    <h5 class="description__subtitle">Janurary 2010</h5>
+                    <h3 class="description__title">Amara Lopez</h3>
+                    <p class="description__info">
+                      Tortor aliquam nulla facilisi cras fermentum odio eu
+                      feugiat. Quam elementum pulvinar etiam non quam lacus
+                      suspendisse. Nunc sed velit dignissim sodales ut eu sem.
+                      Pretium quam vulputate dignissim suspendisse in est ante
+                      in nibh.
+                    </p>
+                    <div class="description__viewall viewall">
+                      <button class="viewall__button">View case study</button>
+                    </div>
+                  </div>
+                  <div class="card-articles__image reverse-img">
+                    <img
+                      src="./src//images/victorian/Amara-Lopez.png"
+                      alt="Amara Lopez"
+                    />
+                  </div>
+                </div>
+
+                <div class="articles__card card-articles">
+                  <div class="card-articles__description description">
+                    <h5 class="description__subtitle">September 2021</h5>
+                    <h3 class="description__title">Priya Patel</h3>
+                    <p class="description__info">
+                      Et malesuada fames ac turpis egestas maecenas pharetra
+                      convallis. Aenean vel elit scelerisque mauris. Gravida
+                      neque convallis a cras semper auctor neque vitae.
+                      Habitasse platea dictumst quisque sagittis. Gravida neque
+                      convallis a cras semper.
+                    </p>
+                    <div class="description__viewall viewall">
+                      <button class="viewall__button">View case study</button>
+                    </div>
+                  </div>
+                  <div class="card-articles__image">
+                    <img
+                      src="./src//images/victorian/Priya-Patel.png"
+                      alt="Priya Patel"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="victorian__collection collection">
+                <div class="collection__body">
+                  <h5 class="collection__subtitle">November 2022</h5>
+                  <h3 class="collection__title">Victorian Collection</h3>
+
+                  <div class="collection__collage">
+                    <img
+                      class="collection__image"
+                      src="./src/images/victorian/collection.png"
+                      alt="Victiorian Collection"
+                    />
+                  </div>
+
+                  <div class="collection__viewall viewall">
+                    <button class="viewall__button">View case study</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__contactus contactus">
+          <div class="contactus__container container">
+            <div class="contactus__body">
+              <h2 class="contactus__title">Capture the world with us</h2>
+              <p class="contactus__description">
+                Libero justo laoreet sit amet cursus sit amet dictum sit.
+                Consequat nisl vel pretium lectus. In ornare quam viverra orci
+                sagittis eu volutpat odio. Euismod nisi porta lorem mollis
+                aliquam ut porttitor leo ac felis.
+              </p>
+              <div class="contactus__viewall viewall">
+                <button class="viewall__button">Contact us</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__body">
+            <div class="footer__navigation navigation">
+              <div class="navigation__logo">
+                <img src="./src/images/header/logo.png" alt="logo" />
+                <span class="navigation__title">Capture Studio</span>
+              </div>
+
+              <nav class="navigation__nav">
+                <ul class="navigation__list">
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#"> Projects</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Portraits</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Fashion</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Fine Art</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__contacts contacts">
+              <div class="contacts__confidentiality">
+                <span>© 2023 Capture Studio. All rights reserved.</span>
+              </div>
+              <div class="contacts__social">
+                <a class="contacts__link" href="#">
+                  <img
+                    src="./src/images/footer/social/icon/facebook.svg"
+                    alt="facebook"
+                  />
+                </a>
+
+                <a class="contacts__link" href="#">
+                  <img
+                    src="./src/images/footer/social/icon/instagram.svg"
+                    alt="instagram"
+                  />
+                </a>
+
+                <a class="contacts__link" href="#">
+                  <img
+                    src="./src/images/footer/social/icon/twiter.svg"
+                    alt="twiter"
+                  />
+                </a>
+
+                <a class="contacts__link" href="#">
+                  <img
+                    src="./src/images/footer/social/icon/linkedin.svg"
+                    alt="linkedin"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
