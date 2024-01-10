@@ -1,0 +1,24 @@
+//text-color
+$text-orange: #fc4308;
+
+//text-size
+$text-small: 14px;
+$text-regular: 16px;
+$text-medium: 18px;
+$text-large: 20px;
+$text-huge: 48px;
+$text-biggest: 100px;
+
+//text-weight
+$font-regular: 400;
+$font-medium: 500;
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
