@@ -6,12 +6,7 @@
   max-width: 1230px;
 }
 
-.wrapper {
-  @include flex-column;
-}
-
 .header {
-  flex: 0 0 auto;
   background: linear-gradient(
     to right top,
     #0d1e20 0%,
@@ -153,7 +148,6 @@
 //main
 
 .main {
-  flex: 1 0 100%;
   &__ourwork {
   }
 }
@@ -442,7 +436,6 @@
 //footer
 
 .footer {
-  flex: 0 0 auto;
   background-color: #0e1513;
 
   &__container {
