@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Author: V.T, Category: Photo, Length: 1 page"
+    />
     <title>Capture Studio</title>
   </head>
   <body>
     <header class="header">
-      <div class="page-header__container container">
+      <div class="header__container container">
         <div class="header__navigation navigation">
-          <div class="navigation__logo">
-            <img src="./src/images/header/logo.png" alt="logo" />
+          <picture class="navigation__logo">
+            <img
+              srcset="
+                ./src/images/header/logo.png    1x,
+                ./src/images/header/logo_x2.png 2x
+              "
+              alt="logo"
+            />
             <span class="navigation__title">Capture Studio</span>
-          </div>
+          </picture>
 
           <div class="burger">
             <span class="burger-line"></span>
@@ -24,58 +34,54 @@
           <nav class="navigation__nav">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link" href="#" aria-label="projects">
-                  Projects
-                </a>
+                <a class="navigation__link" href="#"> Projects </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#" aria-label="portraits"
-                  >Portraits
-                </a>
+                <a class="navigation__link" href="#">Portraits </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#" aria-label="fashions">
-                  Fashion
-                </a>
+                <a class="navigation__link" href="#"> Fashion </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#" aria-label="fine-art">
-                  Fine Art
-                </a>
+                <a class="navigation__link" href="#"> Fine Art </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#" aria-label="contacts">
-                  Contact
-                </a>
+                <a class="navigation__link" href="#"> Contact </a>
               </li>
             </ul>
           </nav>
         </div>
-
-        <section class="header_main main-header">
-          <div class="main-header__text">
-            <h1 class="main-header__title">We Capture the World</h1>
-            <p class="main-header__description">
+      </div>
+    </header>
+    <main class="main">
+      <section class="main_introduse introduce">
+        <div class="introduce__container container">
+          <div class="introduce__text">
+            <h1 class="introduce__title">We Capture the World</h1>
+            <p class="introduce__description">
               At our studio, we don't just take pictures - we capture the world.
               Our passion for photography goes beyond just snapping a photo - we
               strive to create images that tell a story, evoke emotions, and
               capture the essence of the world around us.
             </p>
-            <button class="main-header__button" aria-label="play">
+            <button class="introduce__button" aria-label="play">
               <img
                 src="./src/images/header/header-button-icon.png"
                 alt="button-icon"
               />
             </button>
           </div>
-          <div class="main-header__image">
-            <img src="./src/images/header/main.png" alt="main-image" />
+          <div class="introduce__image">
+            <img
+              data-set="webp"
+              src="./src/images/introduce/main.webp"
+              alt="main-image"
+            />
           </div>
-        </section>
-      </div>
-    </header>
-    <main class="main">
-      <section class="main__ourwork ourwork">
+        </div>
+      </section>
+
+      <section class="main__ourwork ourwork padding">
         <div class="ourwork__container container">
           <div class="ourwork__body">
             <h2 class="ourwork__title">Our work</h2>
@@ -83,8 +89,10 @@
               <article class="cards__card">
                 <div class="cards__image">
                   <img
-                    src="./src/images/ourwork/Aisha-Patel.png"
+                    data-set="webp"
+                    src="./src/images/ourwork/Aisha-Patel.webp"
                     alt="Aisha Patel"
+                    loading="lazy"
                   />
                 </div>
                 <span class="cards__date">2018</span>
@@ -96,8 +104,10 @@
               <article class="cards__card">
                 <div class="cards__image">
                   <img
-                    src="./src/images/ourwork/Isabella-Costa.png"
+                    data-set="webp"
+                    src="./src/images/ourwork/Isabella-Costa.webp"
                     alt="Isabella Costa"
+                    loading="lazy"
                   />
                 </div>
                 <span class="cards__date">2021</span>
@@ -109,8 +119,10 @@
               <article class="cards__card">
                 <div class="cards__image">
                   <img
-                    src="./src/images/ourwork/Fatima-Hassan.png"
+                    data-set="webp"
+                    src="./src/images/ourwork/Fatima-Hassan.webp"
                     alt="Fatima Hassan"
+                    loading="lazy"
                   />
                 </div>
                 <span class="cards__date">2022</span>
@@ -125,119 +137,118 @@
           </div>
         </div>
       </section>
-      <section class="main__victorian victorian">
-        <div class="victorian__container container">
-          <div class="victorian__body">
-            <div class="victorian__articles articles">
-              <div class="articles__card card-articles">
-                <div class="card-articles__description description">
-                  <h5 class="description__subtitle">March 2022</h5>
-                  <h3 class="description__title">Gabriela Silva</h3>
-                  <p class="description__info">
-                    Cras semper auctor neque vitae tempus. Neque volutpat ac
-                    tincidunt vitae. Eros donec ac odio tempor orci dapibus
-                    ultrices. Eget mauris pharetra et ultrices neque ornare.
-                    Metus aliquam eleifend mi in nulla posuere sollicitudin
-                    aliquam. Nunc id cursus metus aliquam eleifend mi.
-                  </p>
-                  <div class="description__viewall viewall">
-                    <button
-                      class="viewall__button"
-                      aria-label="view-case-study"
-                    >
-                      View case study
-                    </button>
-                  </div>
-                </div>
-                <div class="card-articles__image">
-                  <img
-                    src="./src//images/victorian/Gabriela-Silva.png"
-                    alt="Gabriela Silva"
-                  />
-                </div>
-              </div>
 
-              <div class="articles__card card-articles">
-                <div
-                  class="card-articles__description description reverse-description"
-                >
-                  <h5 class="description__subtitle">Janurary 2010</h5>
-                  <h3 class="description__title">Amara Lopez</h3>
-                  <p class="description__info">
-                    Tortor aliquam nulla facilisi cras fermentum odio eu
-                    feugiat. Quam elementum pulvinar etiam non quam lacus
-                    suspendisse. Nunc sed velit dignissim sodales ut eu sem.
-                    Pretium quam vulputate dignissim suspendisse in est ante in
-                    nibh.
-                  </p>
-                  <div class="description__viewall viewall">
-                    <button
-                      class="viewall__button"
-                      aria-label="view-case-study"
-                    >
-                      View case study
-                    </button>
-                  </div>
-                </div>
-                <div class="card-articles__image reverse-img">
-                  <img
-                    src="./src//images/victorian/Amara-Lopez.png"
-                    alt="Amara Lopez"
-                  />
-                </div>
-              </div>
-
-              <div class="articles__card card-articles">
-                <div class="card-articles__description description">
-                  <h5 class="description__subtitle">September 2021</h5>
-                  <h3 class="description__title">Priya Patel</h3>
-                  <p class="description__info">
-                    Et malesuada fames ac turpis egestas maecenas pharetra
-                    convallis. Aenean vel elit scelerisque mauris. Gravida neque
-                    convallis a cras semper auctor neque vitae. Habitasse platea
-                    dictumst quisque sagittis. Gravida neque convallis a cras
-                    semper.
-                  </p>
-                  <div class="description__viewall viewall">
-                    <button
-                      class="viewall__button"
-                      aria-label="view-case-study"
-                    >
-                      View case study
-                    </button>
-                  </div>
-                </div>
-                <div class="card-articles__image">
-                  <img
-                    src="./src//images/victorian/Priya-Patel.png"
-                    alt="Priya Patel"
-                  />
-                </div>
+      <section class="main__gabriela gabriela padding">
+        <div class="gabriela__container container">
+          <article class="gabriela__article">
+            <div class="gabriela__description description">
+              <span class="description__subtitle">March 2022</span>
+              <h3 class="description__title">Gabriela Silva</h3>
+              <p class="description__info">
+                Cras semper auctor neque vitae tempus. Neque volutpat ac
+                tincidunt vitae. Eros donec ac odio tempor orci dapibus
+                ultrices. Eget mauris pharetra et ultrices neque ornare. Metus
+                aliquam eleifend mi in nulla posuere sollicitudin aliquam. Nunc
+                id cursus metus aliquam eleifend mi.
+              </p>
+              <div class="description__viewall viewall">
+                <button class="viewall__button" aria-label="view-case-study">
+                  View case study
+                </button>
               </div>
             </div>
-            <div class="victorian__collection collection">
-              <div class="collection__body">
-                <h5 class="collection__subtitle">November 2022</h5>
-                <h3 class="collection__title">Victorian Collection</h3>
-
-                <div class="collection__collage">
-                  <img
-                    class="collection__image"
-                    src="./src/images/victorian/collection.png"
-                    alt="Victiorian Collection"
-                  />
-                </div>
-
-                <div
-                  class="collection__viewall viewall"
-                  aria-label="view-case-study"
-                >
-                  <button class="viewall__button">View case study</button>
-                </div>
-              </div>
+            <div class="gabriela__image">
+              <img
+                data-set="webp"
+                src="./src//images/victorian/Gabriela-Silva.webp"
+                alt="Gabriela Silva"
+                loading="lazy"
+              />
             </div>
-          </div>
+          </article>
         </div>
+      </section>
+
+      <section class="main__amara amara padding">
+        <div class="amara__container container">
+          <article class="amara__article">
+            <div class="amara__description description">
+              <span class="description__subtitle">Janurary 2010</span>
+              <h3 class="description__title">Amara Lopez</h3>
+              <p class="description__info">
+                Tortor aliquam nulla facilisi cras fermentum odio eu feugiat.
+                Quam elementum pulvinar etiam non quam lacus suspendisse. Nunc
+                sed velit dignissim sodales ut eu sem. Pretium quam vulputate
+                dignissim suspendisse in est ante in nibh.
+              </p>
+              <div class="description__viewall viewall">
+                <button class="viewall__button" aria-label="view-case-study">
+                  View case study
+                </button>
+              </div>
+            </div>
+            <div class="amara__image">
+              <img
+                data-set="webp"
+                src="./src/images/victorian/Amara-Lopez.webp"
+                alt="Amara Lopez"
+                loading="lazy"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="main__priya priya padding">
+        <div class="priya__container container">
+          <article class="priya__article">
+            <div class="priya__description description">
+              <span class="description__subtitle">September 2021</span>
+              <h3 class="description__title">Priya Patel</h3>
+              <p class="description__info">
+                Et malesuada fames ac turpis egestas maecenas pharetra
+                convallis. Aenean vel elit scelerisque mauris. Gravida neque
+                convallis a cras semper auctor neque vitae. Habitasse platea
+                dictumst quisque sagittis. Gravida neque convallis a cras
+                semper.
+              </p>
+              <div class="description__viewall viewall">
+                <button class="viewall__button" aria-label="view-case-study">
+                  View case study
+                </button>
+              </div>
+            </div>
+            <div class="priya__image">
+              <img
+                data-set="webp"
+                src="./src//images/victorian/Priya-Patel.webp"
+                alt="Priya Patel"
+                loading="lazy"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="main__collection collection padding">
+        <article class="collection__body">
+          <span class="collection__subtitle">November 2022</span>
+          <h3 class="collection__title">Victorian Collection</h3>
+
+          <div class="collection__collage">
+            <img
+              data-set="webp"
+              class="collection__image"
+              src="./src/images/victorian/collection.webp"
+              alt="Victiorian Collection"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="collection__viewall viewall" aria-label="view-case-study">
+            <button class="viewall__button">View case study</button>
+          </div>
+        </article>
       </section>
       <section class="main__contactus contactus">
         <div class="contactus__container container">
@@ -250,9 +261,7 @@
               ut porttitor leo ac felis.
             </p>
             <div class="contactus__viewall viewall">
-              <button class="viewall__button" aria-label="contact-us">
-                Contact us
-              </button>
+              <button class="viewall__button">Contact us</button>
             </div>
           </div>
         </div>
@@ -270,35 +279,25 @@
             <nav class="navigation__nav">
               <ul class="navigation__list">
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#" aria-label="projects">
-                    Projects
-                  </a>
+                  <a class="navigation__link" href="#">Projects </a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#" aria-label="portraits">
-                    Portraits
-                  </a>
+                  <a class="navigation__link" href="#">Portraits </a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#" aria-label="fashions">
-                    Fashion
-                  </a>
+                  <a class="navigation__link" href="#">Fashion </a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#" aria-label="fine-art">
-                    Fine Art
-                  </a>
+                  <a class="navigation__link" href="#">Fine Art </a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#" aria-label="contacts">
-                    Contact
-                  </a>
+                  <a class="navigation__link" href="#">Contact </a>
                 </li>
               </ul>
             </nav>
           </div>
 
-          <div class="footer__contacts contacts">
+          <section class="footer__contacts contacts">
             <div class="contacts__confidentiality">
               <span>© 2023 Capture Studio. All rights reserved.</span>
             </div>
@@ -331,10 +330,11 @@
                 />
               </a>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </footer>
+    <script defer src="./src/scripts/test-webp.ts"></script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
