@@ -20,7 +20,5 @@ testIsSupportedWebP().then((isSupported) => {
       img.src = webpSrc;
       console.log("Replaced image source with WebP:", img.src);
     });
-  } else {
-    console.log("WebP is supported");
   }
 });
