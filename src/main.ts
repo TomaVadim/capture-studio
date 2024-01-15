@@ -1,12 +1,12 @@
 import { addStylesToHeader } from "@/helpers/add-styles-to-header";
 import { sections } from "@/constants/nodes/nodes";
 import { sectionObserver } from "@/scripts/observers/section-observer";
-
-import "@/styles/global.scss";
 import {
   changeImagesFormatToPng,
   testIsSupportedWebP,
-} from "./scripts/test-webp";
+} from "@/scripts/test-webp";
+
+import "@/styles/global.scss";
 
 document.addEventListener("scroll", addStylesToHeader);
 
