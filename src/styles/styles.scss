@@ -7,23 +7,17 @@
 }
 
 .header {
-  background: linear-gradient(
-    to right top,
-    #0d1e20 0%,
-    #313e2a 100%,
-    #262d20 100%
-  );
-  &__navigation {
-  }
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
 }
 
 .navigation {
   padding-block: 24px;
   @include flex-row;
   justify-content: space-between;
-  &__logo {
-  }
-
   &__title {
     display: inline-block;
     margin-left: 10px;
@@ -37,14 +31,16 @@
     }
   }
 
+  &__logo {
+    & > img {
+      aspect-ratio: 1;
+    }
+  }
+
   &__list {
     @include flex-row;
     gap: 28px;
   }
-
-  &__item {
-  }
-
   &__link {
     position: relative;
     top: 0;
@@ -65,17 +61,31 @@
   }
 }
 
-.main-header {
-  padding-block: 80px;
-  @include flex-row;
+//main
+.main {
+  background: linear-gradient(to right, #323e2a 0%, #101815 100%);
+}
+.introduce {
+  padding-top: 65px;
+  background: linear-gradient(
+    to right top,
+    #0d1e20 0%,
+    #313e2a 100%,
+    #262d20 100%
+  );
 
-  @media screen and (max-width: 1024px) {
-    @include flex-column;
-    align-items: center;
-  }
+  &__container {
+    padding-block: 80px;
+    @include flex-row;
 
-  @media screen and (max-width: 540px) {
-    padding-block: 40px;
+    @media screen and (max-width: 1024px) {
+      @include flex-column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 540px) {
+      padding-block: 40px;
+    }
   }
 
   &__text {
@@ -144,13 +154,7 @@
     }
   }
 }
-
-//main
-
-.main {
-  &__ourwork {
-  }
-}
+//ourwork
 .ourwork {
   background-color: #0e1513;
   padding-block: 80px;
@@ -158,12 +162,6 @@
   @media screen and (max-width: 540px) {
     padding-block: 40px;
   }
-  &__container {
-  }
-
-  &__body {
-  }
-
   &__title {
     font-size: 60px;
     font-weight: $font-medium;
@@ -172,12 +170,6 @@
     @media screen and (max-width: 1024px) {
       text-align: center;
     }
-  }
-
-  &__cards {
-  }
-
-  &__viewall {
   }
 }
 
@@ -234,66 +226,33 @@
     }
   }
 }
-
-//victorian
-
-.main {
-  &__victorian {
-  }
-}
-.victorian {
-  background: linear-gradient(to right, #323e2a 0%, #101815 100%);
-
+//sections: gabriela, amara, priya
+.gabriela,
+.amara,
+.priya {
   &__container {
+    @include flex-column;
   }
 
-  &__body {
-  }
-
-  &__articles {
-  }
-}
-.container {
-}
-.articles {
-  @include flex-column;
-  gap: 160px;
-  padding-block: 80px;
-
-  @media screen and (max-width: 840px) {
-    gap: 80px;
-  }
-  @media screen and (max-width: 540px) {
+  &__article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     gap: 40px;
-    padding-block: 40px;
-  }
-  &__card {
-  }
-}
-.card-articles {
-  @include flex-row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 40px;
 
-  @media screen and (max-width: 840px) {
-    justify-content: center;
-    flex-wrap: wrap;
+    @media screen and (max-width: 840px) {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
-  &__description {
-  }
-
   &__image {
     max-width: 560px;
 
     & > img {
       width: 100%;
       height: 100%;
-    }
-
-    order: 2;
-    @media screen and (max-width: 840px) {
-      order: 1;
     }
   }
 }
@@ -327,25 +286,19 @@
     line-height: 150%;
     margin-bottom: 40px;
   }
+}
+//amara
+.amara {
+  &__article {
+    flex-direction: row;
 
-  &__viewall {
+    @media screen and (max-width: 840px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 }
-
-.reverse-img {
-  order: 1;
-}
-
-.reverse-description {
-  order: 2;
-}
-
 //collection
-
-.victorian {
-  &__collection {
-  }
-}
 .collection {
   &__body {
     @include flex-column;
@@ -379,17 +332,8 @@
     width: 100%;
     height: 100%;
   }
-
-  &__viewall {
-  }
 }
-
 //contactus
-
-.main {
-  &__contactus {
-  }
-}
 .contactus {
   @include flex-column;
   align-items: center;
@@ -403,10 +347,6 @@
   @media screen and (max-width: 540px) {
     padding-block: 40px;
   }
-
-  &__container {
-  }
-
   &__body {
     max-width: 680px;
     text-align: center;
@@ -432,47 +372,14 @@
     justify-content: center;
   }
 }
-
 //footer
-
 .footer {
   background-color: #0e1513;
-
-  &__container {
-  }
-
   &__body {
-  }
-
-  &__navigation {
     padding-bottom: 80px;
     @media screen and (max-width: 540px) {
       padding-bottom: 40px;
     }
-  }
-
-  &__contacts {
-  }
-}
-.container {
-}
-.navigation {
-  &__logo {
-  }
-
-  &__title {
-  }
-
-  &__nav {
-  }
-
-  &__list {
-  }
-
-  &__item {
-  }
-
-  &__link {
   }
 }
 .contacts {
@@ -481,15 +388,10 @@
   align-items: center;
   padding-block: 34px 42px;
   border-top: 1px solid $text-orange;
-
-  &__confidentiality {
-  }
-
   &__social {
     @include flex-row;
     gap: 20px;
   }
-
   &__link {
     &:focus-visible {
       padding-inline: 16px;
@@ -500,5 +402,27 @@
       color: #af340b;
       top: -2px;
     }
+  }
+}
+//another styles
+.blur {
+  background-color: rgba($color: #fff, $alpha: 0.8);
+}
+
+.padding {
+  padding-top: 120px;
+  opacity: 0;
+  @media screen and (max-width: 768px) {
+    padding-top: 80px;
+  }
+  transition: opacity 0.5s ease, padding-top 1s ease;
+}
+
+.scroll-effect {
+  padding-top: 80px;
+  opacity: 1;
+
+  @media screen and (max-width: 540px) {
+    padding-top: 40px;
   }
 }
