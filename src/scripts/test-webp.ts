@@ -9,16 +9,16 @@ const testIsSupportedWebP = (): Promise<boolean> => {
   });
 };
 
-testIsSupportedWebP().then((isSupported) => {
-  if (!isSupported) {
-    const images = document.querySelectorAll(
-      "[data-set='webp']"
-    ) as NodeListOf<HTMLImageElement>;
-    images.forEach((img) => {
-      const currentSrc = img.src;
-      const webpSrc = currentSrc.replace(/\.([a-z]+)$/, ".png");
-      img.src = webpSrc;
-      console.log("Replaced image source with WebP:", img.src);
-    });
-  }
-});
+const changeImagesFormatToPng = () => {
+  const images = document.querySelectorAll(
+    "[data-set='webp']"
+  ) as NodeListOf<HTMLImageElement>;
+  images.forEach((img) => {
+    const currentSrc = img.src;
+    const webpSrc = currentSrc.replace(/\.([a-z]+)$/, ".png");
+    img.src = webpSrc;
+    console.log("Replaced image source with WebP:", img.src);
+  });
+};
+
+export { testIsSupportedWebP, changeImagesFormatToPng };
